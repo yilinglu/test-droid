@@ -1,4 +1,4 @@
-module.exports = function() => {
+module.exports = function() {
     return {
         pong: function(request, response) {
             return response.text('Pong!');
