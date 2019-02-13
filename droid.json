@@ -1,0 +1,14 @@
+{
+    "name": "test",
+    "script": "index.js",
+    "actions": [
+      {
+        "function": "pong",
+        "aliases": ["ping"]
+      },
+      {
+        "function": "echo",
+        "aliases": ["echo :message([\\s\\S]*)" ]
+      }
+    ]
+  }
