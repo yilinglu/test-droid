@@ -5,7 +5,8 @@ module.exports = function() {
         },
         echo: function(request, response) {
             const message = request.params.message
-            return response.text(`Sending echo ${message}`).send();
+            const name = request.params.name
+            return response.text(`Sending echo ${message} ${name}`).send();
         }
     };
 }
