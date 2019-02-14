@@ -7,6 +7,9 @@ module.exports = function() {
             const message = request.params.message
             const name = request.params.name
             return response.text(`Sending echo ${message} ${name}`).send();
+        },
+        secret: function(request, response) {
+            return response.text('Some dirty secret').send();
         }
     };
 }
