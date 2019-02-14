@@ -8,7 +8,7 @@
       },
       {
         "function": "echo",
-        "aliases": ["echo :message([\\s\\S]*)" ]
+        "aliases": ["echo :message([\\s\\S]*)", "another-echo :message([\\s\\S]*)"]
       }
     ]
   }
