@@ -7,6 +7,20 @@
         "aliases": ["ping"]
       },
       {
+        "function": "dmPong",
+        "aliases": ["direct ping"],
+        "acls": {
+            "dm": true
+        }
+      },
+      {
+        "function": "dmNotAllowedPong",
+        "aliases": ["direct ping not allowed"],
+        "acls": {
+            "dm": false
+        }
+      },
+      {
         "function": "echo",
         "aliases": ["echo :message([\\s\\S]*) :name([\\s\\S]*)", "another-echo :message([\\s\\S]*) :name([\\s\\S]*)"]
       },
