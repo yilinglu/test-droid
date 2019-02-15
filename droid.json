@@ -13,7 +13,7 @@
       {
           "function": "secret",
           "aliases": ["secret"],
-          "acl": {
+          "acls": {
               "channels": "security"
           }
       }
