@@ -36,16 +36,16 @@
       },
       {
         "function": "personalPing",
-        "aliases": ["personal ping :name([\\s\\S]*)"],
+        "aliases": ["personal ping"],
         "acls": {
             "mention": true
         }
       },
       {
         "function": "noPersonalPing",
-        "aliases": ["no personal ping :name([\\s\\S]*)"],
+        "aliases": ["no personal ping"],
         "acls": {
-            "mention": true
+            "mention": false
         }
       },
       {
