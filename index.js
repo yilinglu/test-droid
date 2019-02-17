@@ -18,6 +18,9 @@ module.exports = function() {
         personalPing: function(request, response) {
             return response.text('Personal pong!').send();
         },
+        noPersonalPing: function(request, response) {
+            return response.text('No personal pong!').send();
+        },
         echo: function(request, response) {
             const message = request.params.message
             const name = request.params.name

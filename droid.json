@@ -42,6 +42,13 @@
         }
       },
       {
+        "function": "noPersonalPing",
+        "aliases": ["no personal ping :name([\\s\\S]*)"],
+        "acls": {
+            "mention": true
+        }
+      },
+      {
         "function": "echo",
         "aliases": ["echo :message([\\s\\S]*) :name([\\s\\S]*)", "another-echo :message([\\s\\S]*) :name([\\s\\S]*)"]
       },
