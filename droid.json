@@ -28,6 +28,13 @@
         }
       },
       {
+        "function": "noExplicitPing",
+        "aliases": ["no explicit ping"],
+        "acls": {
+            "explicitMention": false
+        }
+      },
+      {
         "function": "echo",
         "aliases": ["echo :message([\\s\\S]*) :name([\\s\\S]*)", "another-echo :message([\\s\\S]*) :name([\\s\\S]*)"]
       },
