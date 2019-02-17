@@ -15,6 +15,9 @@ module.exports = function() {
         noExplicitPing: function(request, response) {
             return response.text('No explicit pong!').send();
         },
+        personalPing: function(request, response) {
+            return response.text('Personal pong!').send();
+        },
         echo: function(request, response) {
             const message = request.params.message
             const name = request.params.name
