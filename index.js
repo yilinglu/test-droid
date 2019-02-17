@@ -9,6 +9,9 @@ module.exports = function() {
         dmPong: function(request, response) {
             return response.text('Pong!').send();
         },
+        explicitPing: function(request, response) {
+            return response.text('Pong!').send();
+        },
         echo: function(request, response) {
             const message = request.params.message
             const name = request.params.name

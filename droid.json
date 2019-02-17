@@ -21,6 +21,13 @@
         }
       },
       {
+        "function": "explicitPing",
+        "aliases": ["explicit ping"],
+        "acls": {
+            "explicitMention": true
+        }
+      },
+      {
         "function": "echo",
         "aliases": ["echo :message([\\s\\S]*) :name([\\s\\S]*)", "another-echo :message([\\s\\S]*) :name([\\s\\S]*)"]
       },
