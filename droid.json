@@ -53,6 +53,10 @@
         "aliases": ["echo :message([\\s\\S]*) :name([\\s\\S]*)", "another-echo :message([\\s\\S]*) :name([\\s\\S]*)"]
       },
       {
+        "function": "directMessage",
+        "aliases": ["direct message to :name([\\s\\S]*)"]
+      },
+      {
           "function": "secret",
           "aliases": ["secret"],
           "acls": {

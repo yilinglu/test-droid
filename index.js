@@ -26,6 +26,10 @@ module.exports = function() {
             const name = request.params.name
             return response.text(`Sending echo ${message} ${name}`).send();
         },
+        directMessage: function(request, response) {
+            const target = request.params.name;
+            return response.text('hello from test', target).send();
+        },
         secret: function(request, response) {
             return response.text('Some dirty secret').send();
         }
