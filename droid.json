@@ -62,6 +62,10 @@
           "acls": {
               "channels": "security"
           }
+      },
+      {
+        "function": "sendFile",
+        "aliases": ["upload :name([\\s\\S]*) :content([\\s\\S]*)"]
       }
     ]
   }

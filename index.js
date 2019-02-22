@@ -32,6 +32,11 @@ module.exports = function() {
         },
         secret: function(request, response) {
             return response.text('Some dirty secret').send();
+        },
+        sendFile: function(request, response) {
+            const fileName = request.params.name;
+            const content = request.params.content;
+            return response.upload(fileName, content).send();
         }
     };
 }
