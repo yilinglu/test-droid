@@ -66,6 +66,10 @@
       {
         "function": "sendFile",
         "aliases": ["upload :name([\\s\\S]*) :content([\\s\\S]*)"]
+      },
+      {
+        "function": "sendAttachment",
+        "aliases": ["send attachment"]
       }
     ]
   }

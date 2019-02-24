@@ -37,6 +37,28 @@ module.exports = function() {
             const fileName = request.params.name;
             const content = request.params.content;
             return response.upload(fileName, content).send();
+        },
+        sendAttachment: function(request, response) {
+            const attachments = [
+                {
+                    fallback: 'ReferenceError - UI is notdefine: https://honeybadger.io/path/to/event/',
+                    text: '<https://honeybadger.io/path/to/event/|ReferenceError> - UI is not defined',
+                    fields: [
+                        {
+                            title: 'Project',
+                            value: 'Awesome Project',
+                            short: true
+                        },
+                        {
+                            title: 'Environment',
+                            value: 'production',
+                            short: true
+                        }
+                    ],
+                    color: '#F35A00'
+                }
+            ];
+            return response.attachment('my attachment', attachments).send();
         }
     };
 }
