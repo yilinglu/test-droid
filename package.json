@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "description": "Test droid for gynoids e2e tests",
   "author": "igorsechyn",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "left-pad": "^1.3.0"
+  }
 }
