@@ -7,8 +7,8 @@
         "aliases": ["ping"]
       },
       {
-        "function": "explicitDing",
-        "aliases": ["explicit ding"],
+        "function": "explicitPing",
+        "aliases": ["positively ping"],
         "acls": {
           "channels": [
             "random",
