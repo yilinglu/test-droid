@@ -7,6 +7,18 @@
         "aliases": ["ping"]
       },
       {
+        "function": "explicitDing",
+        "aliases": ["explicit ding"],
+        "acls": {
+          "channels": [
+            "random",
+            "security"
+          ],          
+            "explicitMention": true,
+            "explicitMentionChannelExclude": ["security"]
+        }
+      },
+      {
         "function": "dmPong",
         "aliases": ["direct ping"],
         "acls": {
