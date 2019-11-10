@@ -40,17 +40,6 @@
         }
       },
       {
-        "function": "explicitPing",
-        "aliases": ["simple ping"],
-        "acls": {
-          "channels": [
-            "random",
-            "security"
-          ],           
-            "explicitMention": true
-        }
-      },
-      {
         "function": "noExplicitPing",
         "aliases": ["no explicit ping"],
         "acls": {
